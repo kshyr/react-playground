@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -23,4 +27,29 @@ a {
     color: white;
     background: black;
   }
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-sizea: 4rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.title a {
+  text-decoration: none;
+  color: #0070f3;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title,
+.description {
+  text-align: center;
 }
