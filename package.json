@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@codemirror/autocomplete": "^6.3.3",
     "@codesandbox/sandpack-react": "^1.17.0",
     "@codesandbox/sandpack-themes": "^1.17.0",
     "@types/node": "18.11.9",
@@ -22,6 +23,7 @@
     "typescript": "4.9.3"
   },
   "devDependencies": {
+    "@types/prettier": "^2.7.1",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",
     "prettier": "^2.7.1",
