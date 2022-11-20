@@ -31,9 +31,7 @@ export default function App() {
   return (
     <main>
       <h1>Hello</h1>
-      <button
-        onClick={() => setCount(count + 1)}
-      >
+      <button onClick={() => setCount(count + 1)}>
         Count: {count}
       </button>
     </main>
@@ -41,9 +39,9 @@ export default function App() {
 }`;
 
 const sass = `body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
 }
+
 main {
   height: 100vh;
   width: 100vw;
@@ -53,9 +51,13 @@ main {
   align-items: center;
 }
 
-@for $i from 1 to 6 {
-  .paragraph-#{$i} {
-    font-size: 10px*$i;
+button {
+  background-color: #00000011;
+  padding: 0 4px;
+  border: 1px solid #000000aa;
+  border-radius: 5px;
+  &:hover {
+    background-color: #00000024;
   }
 }`;
 
@@ -173,15 +175,16 @@ export default function Home() {
               display: "flex",
               flexDirection: "row",
               justifyContent: "center",
-              maxHeight: "430px",
+              minHeight: "400px",
+              maxHeight: "400px",
             }}
           >
             <SandpackCodeEditor
               //@ts-ignore
               ref={codemirrorInstance}
               style={{
-                minWidth: "500px",
-                maxWidth: "500px",
+                minWidth: "420px",
+                maxWidth: "420px",
               }}
               wrapContent={true}
             />
@@ -194,8 +197,8 @@ export default function Home() {
               showOpenInCodeSandbox={false}
               showRefreshButton={false}
               style={{
-                minWidth: "80%",
-                maxWidth: "80%",
+                minWidth: "70%",
+                maxWidth: "70%",
               }}
             />
           </SandpackLayout>
